@@ -52,8 +52,9 @@ export const AnalysisDashboard: React.FC<AnalysisDashboardProps> = ({ notes }) =
       
       {/* Top Level Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Card className="col-span-2 md:col-span-1 bg-black dark:bg-white text-white dark:text-black flex flex-col justify-center items-center py-6">
-           <span className="text-6xl font-black text-outline-white dark:text-outline">{stats.total}</span>
+        {/* Changed Total Card to Purple for better visibility */}
+        <Card className="col-span-2 md:col-span-1 bg-[#8B5CF6] text-white flex flex-col justify-center items-center py-6">
+           <span className="text-6xl font-black">{stats.total}</span>
            <span className="text-sm font-bold uppercase tracking-widest mt-2">Total</span>
         </Card>
          <Card className="bg-green-400 text-black flex flex-col justify-center items-center">
